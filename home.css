@@ -1,0 +1,82 @@
+.Main {
+    width: 338px;
+    height: 601px;
+    display: flex;
+    flex-direction: column;
+    background: red;
+}
+
+body{
+    background-color: aqua;
+}
+.screen {
+    width: 338px;
+    height: 601px;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.TopWrapper {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0));
+    padding-bottom: 20px;
+    z-index: 1;
+}
+
+.Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.button {
+    background-color: rgba(0,0,0,0.3);
+    color: white;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.Logo {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.progress-bar-wrapper {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ProgressBar {
+    width: 100%;
+    display: grid;
+    margin-top: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(5px, 1fr));
+    grid-gap: 5px;
+}
+
+.progress {
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.done {
+    background-color: lightgray;
+}
+
+.hidden {
+    display: none;
+}
